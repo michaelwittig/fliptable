@@ -1,5 +1,6 @@
 var fliptable = require("../index"),
-assert = require("assert");
+  fs = require("fs"),
+  assert = require("assert");
 
 describe("fliptable", function() {
   describe("row to col", function() {
@@ -54,4 +55,11 @@ describe("fliptable", function() {
       assert.deepEqual([{a: {v: 1}}, {a: {v: 2}}, {a: {v: 3}}], fliptable({a: [{v: 1}, {v: 2}, {v: 3}]}));
     })
   });
+  describe("./test/data.json", function() {
+    var rows = require("./data.json");
+    console.log("row", JSON.stringify(rows).length);
+    console.log("col", JSON.stringify(fliptable(rows)).length);
+
+    assert.deepEqual(rows, fliptable(fliptable(rows)));
+  })
 })
