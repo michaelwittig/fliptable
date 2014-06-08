@@ -57,9 +57,6 @@ describe("fliptable", function() {
   });
   describe("./test/data.json", function() {
     var rows = require("./data.json");
-    console.log("row", JSON.stringify(rows).length);
-    console.log("col", JSON.stringify(fliptable(rows)).length);
-
     assert.deepEqual(rows, fliptable(fliptable(rows)));
   })
 })
