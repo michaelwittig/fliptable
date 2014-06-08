@@ -1,0 +1,26 @@
+{
+  "name": "fliptable",
+  "version": "0.0.1",
+  "description": "Flips an array of objects into an object of arrays or vice versa",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:michaelwittig/fliptable.git"
+  },
+  "keywords": [
+    "flip",
+    "table"
+  ],
+  "author": "Michael Wittig <post@michaelwittig.info> (http://michaelwittig.info/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaelwittig/fliptable/issues"
+  },
+  "homepage": "https://github.com/michaelwittig/fliptable",
+  "devDependencies": {
+    "mocha": "1.20.1"
+  }
+}
