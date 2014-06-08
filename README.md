@@ -1,3 +1,7 @@
+[![Build Status](https://secure.travis-ci.org/michaelwittig/fliptable.png)](http://travis-ci.org/michaelwittig/fliptable)
+[![NPM version](https://badge.fury.io/js/fliptable.png)](http://badge.fury.io/js/fliptable)
+[![NPM dependencies](https://david-dm.org/michaelwittig/fliptable.png)](https://david-dm.org/michaelwittig/fliptable)
+
 # fliptable
 
 A column oriented representation of your table will save you on average about 50% of bytes!
