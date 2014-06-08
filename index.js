@@ -1,4 +1,5 @@
 function createUndefineds(n) {
+	"use strict";
 	var undefineds = [], i;
 	for(i = 0; i < n; i += 1) {
 		undefineds.push(undefined);
@@ -7,6 +8,7 @@ function createUndefineds(n) {
 }
 
 function flipRow2Col(rows) {
+	"use strict";
 	var cols = {}, col;
 	rows.forEach(function(row, i) {
 		for (col in row) {
@@ -35,6 +37,7 @@ function flipRow2Col(rows) {
 }
 
 function flipCol2Row(cols) {
+	"use strict";
 	var rows = [], col;
 	for (col in cols) {
 		if (cols.hasOwnProperty(col)) {
@@ -52,6 +55,7 @@ function flipCol2Row(cols) {
 }
 
 function flip(o) {
+	"use strict";
 	if (Array.isArray(o)) {
 		return flipRow2Col(o);
 	}
